@@ -6,15 +6,23 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 function Header() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="border-bottom" sticky="top">
       <Container>
-        <Navbar.Brand href="#home">Expense Tracker</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/" className="fw-bold">
+          💸 Expense Tracker
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Link to="/">Home</Link>
-            <Link to="/log">Log New Expense</Link>
-            <Link to="/summary">View Your Summary</Link>
+          <Nav className="ms-auto gap-2">
+            <Nav.Link as={Link} to="/">
+              Home
+            </Nav.Link>
+            <Nav.Link as={Link} to="/log">
+              Log Expense
+            </Nav.Link>
+            <Nav.Link as={Link} to="/summary">
+              Summary
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
