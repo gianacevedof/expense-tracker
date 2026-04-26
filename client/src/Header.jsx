@@ -6,7 +6,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 function Header() {
   return (
-    <Navbar expand="lg" className="border-bottom" sticky="top">
+    <Navbar expand="lg" className="bg-white border-bottom" sticky="top">
       <Container>
         <Navbar.Brand as={Link} to="/" className="fw-bold">
           💸 Expense Tracker
