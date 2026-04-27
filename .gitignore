@@ -25,3 +25,6 @@ dist-ssr
 *.sw?
 
 ../.DS_Store
+wireframe.html
+wireframe.png
+notes.rtf
