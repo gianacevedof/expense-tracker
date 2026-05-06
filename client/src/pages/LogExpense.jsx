@@ -32,7 +32,10 @@ function LogExpense() {
   };
 
   return (
-    <div className="px-4 pt-5" style={{ maxWidth: "480px", margin: "0 auto" }}>
+    <div
+      className="px-4 pt-5 d-flex flex-column align-items-center min-vh-100"
+      style={{ maxWidth: "480px", margin: "0 auto" }}
+    >
       <h1 className="display-5 fw-bold mb-1">Log New Expense</h1>
       <p className="text-muted mb-4">Add a new expense to your tracker.</p>
 
